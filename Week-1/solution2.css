@@ -31,7 +31,8 @@ body {
   font-size: 1rem;
   font-weight: bold;
 }
-.section1 {
+
+.banner {
   margin-left: 50px;
   background-color: #444544;
   height: 30vh;
@@ -41,52 +42,52 @@ body {
   padding: 25px;
   align-items: flex-start;
 }
-.section1 .section1info {
+.banner .bannerinfo {
   padding: 0 50px;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
 }
-.section1 .section1info h2 {
-  color: white;
+.banner .bannerinfo h2 {
+  color: #fff;
   font-weight: lighter;
   margin-bottom: 10px;
 }
-.section1 .section1info span {
+.banner .bannerinfo span {
   display: block;
-  color: white;
+  color: #fff;
   font-size: 0.7rem;
 }
 
-.section1 .section1info .section1infolower button {
+.banner .bannerinfo .bannerinfolower button {
   background: none;
   border: none;
-  color: white;
+  color: #fff;
   padding: 10px;
 }
-.section1 .section1info .section1infolower button > i {
+.banner .bannerinfo .bannerinfolower button > i {
   margin-right: 5px;
 }
-.section2 {
+.tableview {
   padding: 10px;
   flex: 1;
   overflow-y: scroll;
   margin-left: 50px;
 }
-.section2 table {
+.tableview table {
   width: 100%;
 }
-.section2 table tr:nth-child(even) {
+.tableview table tr:nth-child(even) {
   background-color: #f0f0f0;
 }
-.section2 table tr td {
+.tableview table tr td {
   font-size: 0.85rem;
   font-weight: bold;
   padding: 15px;
   width: 25%;
 }
-.section2 table tr td button {
+.tableview table tr td button {
   color: #4b6797;
   border: 1px solid #4b6797;
   font-size: 0.85rem;
@@ -109,7 +110,7 @@ footer > div {
   align-items: center;
 }
 footer > div > i {
-  color: white;
+  color: #fff;
   font-size: 1.5rem;
   flex: 1;
 }
@@ -121,6 +122,6 @@ footer > div > div {
   margin-left: 10px;
 }
 footer > div > div > h4 {
-  color: white;
+  color: #fff;
   padding: 7px;
 }
