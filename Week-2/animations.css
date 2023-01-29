@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main:hover #box {
+  transform: rotate(90deg);
+}
+
+#box {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  transition: transform 1s ease-in;
+}
+#box:nth-child(1) {
+  background-color: red;
+}
+
+#box:nth-child(2) {
+  background-color: yellow;
+}
+
+#box:nth-child(3) {
+  background-color: blue;
+}
+
+#box:nth-child(4) {
+  background-color: green;
+}
