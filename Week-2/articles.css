@@ -9,12 +9,64 @@ section {
 section > section {
   flex-direction: column;
   padding: 20px;
+  flex: 1;
 }
 
-section > section > article a {
+section > section > div > article a {
   color: black;
   text-decoration: none;
 }
-section > section > article a:hover {
+section > section > div > article a:hover {
   color: blue;
+}
+
+form {
+  padding: 10px;
+  margin-bottom: 50px;
+}
+form > div {
+  display: flex;
+  margin: 20px;
+}
+
+form > div > label {
+  margin-right: 30px;
+}
+form input {
+  padding: 5px;
+}
+form > input[type="submit"] {
+  margin-left: 20px;
+  background-color: lightblue;
+  border: none;
+  padding: 10px;
+}
+form > input[type="submit"]:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+}
+
+section .articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+section .articles article {
+  flex-shrink: 0;
+  width: 33%;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  section .articles {
+    flex-direction: column;
+  }
+  section .articles article {
+    width: 100%;
+  }
 }
