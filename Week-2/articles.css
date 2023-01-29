@@ -1,0 +1,20 @@
+header {
+  text-align: center;
+}
+
+section {
+  display: flex;
+}
+
+section > section {
+  flex-direction: column;
+  padding: 20px;
+}
+
+section > section > article a {
+  color: black;
+  text-decoration: none;
+}
+section > section > article a:hover {
+  color: blue;
+}
