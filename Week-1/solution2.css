@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato";
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  background-color: #f0f0f0;
+  z-index: 1010;
+}
+.sidebar > div {
+  padding-top: 20px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar > div > i {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.banner {
+  margin-left: 50px;
+  background-color: #444544;
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  align-items: flex-start;
+}
+.banner .bannerinfo {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.banner .bannerinfo h2 {
+  color: #fff;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+.banner .bannerinfo span {
+  display: block;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+.banner .bannerinfo .bannerinfolower button {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+}
+.banner .bannerinfo .bannerinfolower button > i {
+  margin-right: 5px;
+}
+.tableview {
+  padding: 10px;
+  flex: 1;
+  overflow-y: scroll;
+  margin-left: 50px;
+}
+.tableview table {
+  width: 100%;
+}
+.tableview table tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+.tableview table tr td {
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 15px;
+  width: 25%;
+}
+.tableview table tr td button {
+  color: #4b6797;
+  border: 1px solid #4b6797;
+  font-size: 0.85rem;
+  padding: 5px;
+}
+footer {
+  background-color: #4b6797;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  z-index: 1012;
+}
+footer > div {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer > div > i {
+  color: #fff;
+  font-size: 1.5rem;
+  flex: 1;
+}
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+footer > div > div > h4 {
+  color: #fff;
+  padding: 7px;
+}
