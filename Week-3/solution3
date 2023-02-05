@@ -1,0 +1,6 @@
+The output will be:
+
+Count is 0
+
+Since message is being created at the time of constructor being invoked and its value it not changed by any other method. So while invoking the function message has value "Count is 0".
+If we been printing count then it will show the incremented value. 
