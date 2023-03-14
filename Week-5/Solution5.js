@@ -4,8 +4,6 @@ function doTask1() {
       resolve("Done 1");
     }, 2000);
   });
-  //   const resolveMyPromise = await myPromise;
-  // Should reach here after being fulfilled or being rejected
 }
 
 async function doTask2() {
@@ -15,7 +13,6 @@ async function doTask2() {
     }, 1000);
   });
   const resolveMyPromise = await myPromise;
-  console.log(resolveMyPromise);
 }
 
 async function doTask3() {
@@ -26,7 +23,6 @@ async function doTask3() {
   });
   const resolveMyPromise = await myPromise;
   resolveMyPromise.then((res) => console.log(res));
-  console.log(resolveMyPromise);
 }
 
 function* doAllTasksUsingGen() {
@@ -36,15 +32,7 @@ function* doAllTasksUsingGen() {
 }
 
 async function doAllTasks() {
-  //   return await doTask1();
-
-  //   val.then((msg) => {
-  //     console.log(msg);
-  //   });
-  //   await doTask2();
   await doTask3();
 }
 
-// const mynewGen = doAllTasksUsingGen();
-
-console.log(doAllTasks());
+doAllTasks();

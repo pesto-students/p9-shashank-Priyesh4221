@@ -1,10 +1,3 @@
-// async function doTask1() {
-//   setTimeout(async () => {
-//     console.log("Resolving task 2");
-//     return;
-//   }, 1000);
-// }
-
 function doTask1() {
   return new Promise((resolve, reject) => {
     resolve("Done");
@@ -27,9 +20,6 @@ function* doTask3() {
 }
 
 const gen = doTask3();
-doTask1().then((resp) => {
-  console.log(resp);
-});
+doTask1().then((resp) => {});
 gen.next();
 gen.next();
-// await doTask2();
